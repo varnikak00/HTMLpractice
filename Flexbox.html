@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+            <title>CODEpEN-Demo FlexBox 3</title>
+    <style>
+        body {padding: 2em;}
+
+        .headerContainer{
+                    display: flex;
+                    flex-flow:column wrap;
+                    align-content: center;
+                    background: lightcoral;
+                    font-weight: bold;
+                    padding: 10px;
+                    font-size: small;
+
+        }
+
+        .footerContainer{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: lightgreen;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .mainContainer{
+            display: flex;
+            text-align: center;
+            flex-flow: row wrap;
+            font-weight: bold;
+        }
+
+        .mainContainerItem{
+            text-align: left;
+            background: lightpink;
+        }
+
+        .sideBarLeftItem{
+            background: gold;
+        }
+        .sideBarRightItem{background: plum;}
+        .sideBarItem{
+            flex:1 0 0;border:0px solid green;
+        }
+        .mainContainerItem{flex:3 0px;}
+
+        .sideBarLeftItem{order: 1;}
+        .mainContainerItem{order: 2;}
+        .sideBarRightItem{order: 3;}
+    </style>
+        </head>
+        <body>
+            <header class="headerContainer">Header-sample FlexBox Example</header>
+            <div class="mainContainer">
+                <section class="mainContainerItem">
+                    <article>
+                        <h2>First article</h2>
+                        <p>HyperText Markup Language (HTML) is the set of markup symbols or codes inserted into a file intended for display on the Internet. The markup tells web browsers how to display a web page's words and images.</p>
+                    </article>
+                    <article>
+                        <h2>Second Article</h2>
+                        <p>HyperText Markup Language is the computer language that facilitates website creation. The language, which has code words and syntax just like any other language, is relatively easy to comprehend and, as time goes on, increasingly powerful in what it allows someone to create. HTML continues to evolve to meet the demands and requirements of the Internet under the guise of the World Wide Web Consortium, the organization that designs and maintains the language; for instance, with the transition to Web 2.0.</p>
+
+                    </article>
+                </section>
+                <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left side bar</p></div></sideBar>
+                <sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right side bar</p></div></sideBar>
+
+
+            </div>
+        <footer class="footerContainer">Footer</footer>
+    </body>
+</html>
